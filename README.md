@@ -1,8 +1,6 @@
 # acorn256
 Acorn256 (Archimedes Computers) color palette converter. Converts between Acorn256/16 and RGB256 / HTML / HSV color formats.
 
-This code converts colors between RGB256, HTML, HSV and ACORN256 / ACORN16.
-
 ACORN256 / ACORN16 default color palettes, which were implemented in 'Acorn Archimedes' computers. Because obviously there are no complete match between 8-bit and 24-bit palettes, some of the RGB / HTML / HSV values provided will return None.
 One should not use this code to convert between rgb and html and etc. because only values, that match Acorn palette, going to be converted.
 
