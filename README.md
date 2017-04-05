@@ -7,8 +7,8 @@ One should not use this code to convert between rgb and html and etc. because on
 ## Syntax
 > convert([input_format], [output_format], [value], [optional: palette])
 >  - input_format, output_format - any of: 'hsv', 'rgb', 'acorn', 'html'
->  - value - must match the input format conventions, '#FFFFFF' for html, etc.
->  - palette - 'acorn16' or 'acorn256'
+>  - value - must match the input format conventions, '#FFFFFF' for html, 0-255 for acorn256 and 0-15 for acorn16, tuple of UInt8 for hsv or rgb
+>  - palette - 'acorn16' or 'acorn256', default is acorn256
 
 ## Examples
 From interpreter / script:
@@ -22,3 +22,11 @@ From the terminal:
 $ python3 acorn256.py rgb acorn '(255, 255, 255)'
 255
 ```
+Of course you can make an executable from it:
+```bash
+$ mv acorn256.py acorn256
+$ chmod u+x acorn256
+$ python3 acorn256.py rgb acorn '(255,255,255)' acorn16
+0
+```
+
