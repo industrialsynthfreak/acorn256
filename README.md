@@ -26,7 +26,7 @@ Of course you can make an executable from it:
 ```bash
 $ mv acorn256.py acorn256
 $ chmod u+x acorn256
-$ python3 acorn256.py rgb acorn '(255,255,255)' acorn16
+$ ./acorn256 rgb acorn '(255,255,255)' acorn16
 0
 ```
 
